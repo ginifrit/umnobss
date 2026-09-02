@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ms" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Gotong Royong Perdana - UMNO BSS</title>
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..900&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../../styles.css">
+    <style>
+        .activity-header {
+            background: var(--c-primary);
+            background-image: linear-gradient(135deg, var(--c-primary-dark), var(--c-primary));
+            color: white;
+            padding: 100px 20px 80px;
+            text-align: center;
+        }
+        .activity-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            justify-content: center;
+            margin: 32px 0;
+            background: #fff;
+            padding: 24px 32px;
+            border-radius: 16px;
+            box-shadow: var(--shadow-md);
+        }
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            color: var(--c-text-main);
+            min-width: 200px;
+        }
+        .meta-item i { color: var(--c-primary); font-size: 24px; }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 16px;
+            margin-top: 32px;
+        }
+        .gallery-item {
+            width: 100%;
+            aspect-ratio: 4/3;
+            object-fit: cover;
+            border-radius: 12px;
+            background: #eaeaea;
+            box-shadow: var(--shadow-sm);
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.03);
+            box-shadow: var(--shadow-md);
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: rgba(255,255,255,0.9);
+            font-weight: 600;
+            margin-bottom: 24px;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .back-btn:hover { color: white; text-decoration: underline; }
+    </style>
+</head>
+<body style="background: var(--c-bg-alt);">
+
+    <div class="activity-header">
+        <div class="s-container">
+            <a href="../../index.html#aktiviti" class="back-btn"><i class="fas fa-arrow-left"></i> Kembali ke Senarai Aktiviti</a>
+            <h1 class="s-display" style="color: white; font-size: 40px; margin-bottom:16px;">Program Gotong Royong Perdana</h1>
+        </div>
+    </div>
+
+    <div class="s-container" style="margin-top: -50px; margin-bottom: 80px;">
+        <div class="activity-meta">
+            <div class="meta-item">
+                <i class="fas fa-calendar-alt"></i>
+                <div>
+                    <div style="font-size: 12px; color: var(--c-text-muted); font-weight: 700; letter-spacing:0.05em;">TARIKH</div>
+                    <div style="font-weight: 700; font-size: 15px;">15 Ogos 2026</div>
+                </div>
+            </div>
+            <div class="meta-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <div style="font-size: 12px; color: var(--c-text-muted); font-weight: 700; letter-spacing:0.05em;">LOKASI</div>
+                    <div style="font-weight: 700; font-size: 15px;">Balai Raya BSS & Taman Permainan</div>
+                </div>
+            </div>
+            <div class="meta-item">
+                <i class="fas fa-bullseye"></i>
+                <div>
+                    <div style="font-size: 12px; color: var(--c-text-muted); font-weight: 700; letter-spacing:0.05em;">TUJUAN</div>
+                    <div style="font-weight: 700; font-size: 15px;">Membersihkan kawasan & memupuk kerjasama</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="s-card" style="margin-bottom: 24px; border:none; padding:40px;">
+            <h2 style="font-size: 24px; font-weight: 800; margin-bottom: 16px;">Penerangan Ringkas</h2>
+            <p style="font-size: 16px; color: var(--c-text-muted); line-height: 1.8;">Program ini dijalankan secara usahasama bersama penduduk setempat bagi memastikan kebersihan dan keceriaan kawasan persekitaran Balai Raya dan taman permainan sentiasa terpelihara. Ia juga bertindak sebagai medium yang berkesan untuk merapatkan ukhuwah sesama ahli komuniti Bandar Sri Sendayan.</p>
+        </div>
+
+        <div class="s-card" style="border:none; padding:40px;">
+            <h2 style="font-size: 24px; font-weight: 800; margin-bottom: 8px;">Galeri Gambar</h2>
+            <p style="color: var(--c-text-muted); font-size: 14px;">(Sila letakkan gambar <b>img1.jpg</b> hingga <b>img8.jpg</b> di dalam folder <code>aktiviti/gotong-royong/</code>)</p>
+            <div class="gallery-grid">
+                <!-- 8 Image placeholders -->
+                <img src="img1.jpg" alt="Gambar 1" class="gallery-item" onerror="this.src='https://placehold.co/600x400/eaeaea/999?text=Gambar+1'">
+                <img src="img2.jpg" alt="Gambar 2" class="gallery-item" onerror="this.src='https://placehold.co/600x400/eaeaea/999?text=Gambar+2'">
+                <img src="img3.jpg" alt="Gambar 3" class="gallery-item" onerror="this.src='https://placehold.co/600x400/eaeaea/999?text=Gambar+3'">
+                <img src="img4.jpg" alt="Gambar 4" class="gallery-item" onerror="this.src='https://placehold.co/600x400/eaeaea/999?text=Gambar+4'">
+                <img src="img5.jpg" alt="Gambar 5" class="gallery-item" onerror="this.src='https://placehold.co/600x400/eaeaea/999?text=Gambar+5'">
+                <img src="img6.jpg" alt="Gambar 6" class="gallery-item" onerror="this.src='https://placehold.co/600x400/eaeaea/999?text=Gambar+6'">
+                <img src="img7.jpg" alt="Gambar 7" class="gallery-item" onerror="this.src='https://placehold.co/600x400/eaeaea/999?text=Gambar+7'">
+                <img src="img8.jpg" alt="Gambar 8" class="gallery-item" onerror="this.src='https://placehold.co/600x400/eaeaea/999?text=Gambar+8'">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
