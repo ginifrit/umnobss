@@ -1,382 +1,721 @@
-<!DOCTYPE html>
-<html lang="ms" dir="ltr">
+<!DOCTYPE  html>
+
+<html  lang="ms"  dir="ltr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <meta name="description" content="Platform rasmi UMNO Cawangan Bandar Sri Sendayan. Pusat hebahan aktiviti dan penyaluran aduan komuniti.">
-    <meta name="theme-color" content="#CC0000">
-    <title>UMNO Cawangan Bandar Sri Sendayan</title>
-    
-    <!-- Fonts & Icons -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..900&display=swap">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css">
-    
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="styles.css">
+
+<meta  charset="UTF-8">
+
+<meta  name="viewport"  content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+
+<meta  name="description"  content="Platform rasmi UMNO Cawangan Bandar Sri Sendayan. Pusat hebahan aktiviti dan penyaluran aduan komuniti.">
+
+<meta  name="theme-color"  content="#CC0000">
+
+<title>UMNO Cawangan Bandar Sri Sendayan</title>
+
+<!-- Fonts & Icons -->
+
+<link  rel="preconnect"  href="https://fonts.googleapis.com">
+
+<link  rel="preconnect"  href="https://fonts.gstatic.com"  crossorigin>
+
+<link  rel="stylesheet"  href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..900&display=swap">
+
+<link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css">
+
+<!-- Custom Styles -->
+
+<link  rel="stylesheet"  href="styles.css">
+
 </head>
+
 <body>
-    <!-- Top Bar -->
-    <div class="top-bar">
-        <div class="s-container top-bar-inner">
-            <div class="date-display">
-                <i class="fas fa-calendar-alt"></i>
-                <span id="gregorian-date"></span> | <span id="hijri-date"></span>
-            </div>
-            <div class="top-bar-right">
-                <a href="https://www.facebook.com/UMNOBSS" target="_blank" class="social-link" title="Facebook UMNO BSS"><i class="fab fa-facebook-f"></i></a>
-            </div>
-        </div>
-    </div>
 
-    <!-- Navigation -->
-    <nav class="s-nav" id="navbar">
-        <div class="s-nav-inner">
-            <a href="#" class="s-nav-brand">
-                <img src="logo.png" alt="Logo UMNO BSS" class="nav-logo">
-                <div class="s-nav-brand-text">
-                    <span class="s-nav-brand-name">UMNO Cawangan</span>
-                    <span class="s-nav-brand-sub">Bandar Sri Sendayan</span>
-                </div>
-            </a>
-            
-            <div class="s-nav-links">
-                <a href="#hero" class="s-nav-link active" data-i18n="nav-home">Utama</a>
-                <a href="#mengenai" class="s-nav-link" data-i18n="nav-about">Mengenai Kami</a>
-                <a href="#aktiviti" class="s-nav-link" data-i18n="nav-activities">Aktiviti</a>
-                <a href="#aduan" class="s-nav-link" data-i18n="nav-complaints">Aduan & Bantuan</a>
-                <div class="lang-switcher">
-                    <a href="#" class="lang-btn active" data-lang="my">BM</a>
-                    <a href="#" class="lang-btn" data-lang="en">EN</a>
-                </div>
-            </div>
+<!-- Top Bar -->
 
-            <button id="mobile-menu-btn" class="s-nav-toggle" aria-expanded="false" aria-label="Buka menu navigasi">
-                <i class="fas fa-bars" id="menu-icon"></i>
-            </button>
-        </div>
-        
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="s-mobile-menu">
-            <a href="#hero" class="s-mobile-link active" data-i18n="nav-home">Utama</a>
-            <a href="#mengenai" class="s-mobile-link" data-i18n="nav-about">Mengenai Kami</a>
-            <a href="#aktiviti" class="s-mobile-link" data-i18n="nav-activities">Aktiviti</a>
-            <a href="#aduan" class="s-mobile-link" data-i18n="nav-complaints">Aduan & Bantuan</a>
-            <div class="lang-switcher" style="margin-top: 16px;">
-                <a href="#" class="lang-btn active" data-lang="my">BM</a>
-                <a href="#" class="lang-btn" data-lang="en">EN</a>
-            </div>
-            <a href="#sertai" class="s-btn s-mobile-cta" style="width:100%; margin-top:24px;">
-                <i class="fas fa-user-plus"></i> <span data-i18n="nav-join">Sertai Kami</span>
-            </a>
-        </div>
-    </nav>
+<div  class="top-bar">
 
-    <!-- Main Content -->
-    <main id="main-content">
-        <!-- Hero Section -->
-        <section id="hero" class="s-hero tab-section" style="display:block;">
-            <div class="s-container s-hero-inner">
-                <div class="s-entrance">
-                    <div class="s-tag" style="background:var(--c-primary-alpha); color:var(--c-primary); margin-bottom:20px;">
-                        <i class="fas fa-map-marker-alt"></i> <span data-i18n="hero-tag">Cawangan Bandar Sri Sendayan</span>
-                    </div>
-                    <h1 class="s-display">
-                        <span data-i18n="hero-title-1">Berkhidmat Untuk</span><br>
-                        <span class="s-accent" data-i18n="hero-title-2">Masyarakat Tempatan</span>
-                    </h1>
-                    <p class="s-subhead" style="max-width:540px; margin-top:16px;" data-i18n="hero-desc">
-                        Pusat khidmat setempat untuk pendaftaran ahli, perkongsian aktiviti, dan saluran terus untuk sebarang aduan atau permohonan bantuan penduduk Bandar Sri Sendayan.
-                    </p>
-                    
-                    <div class="hero-actions">
-                        <a href="#aduan" class="s-btn">
-                            <i class="fas fa-hands-helping"></i> <span data-i18n="hero-btn-complaint">Salurkan Aduan</span>
-                        </a>
-                        <a href="#aktiviti" class="s-btn s-btn-outline">
-                            <i class="fas fa-calendar-alt"></i> <span data-i18n="hero-btn-activity">Lihat Aktiviti</span>
-                        </a>
-                    </div>
-                    
-                    <div style="display:flex; gap:24px; margin-top:32px; flex-wrap:wrap;">
-                        <span class="s-subhead" style="font-size:14px; display:flex; align-items:center; gap:6px;">
-                            <i class="fas fa-users" style="color:var(--c-primary)"></i> <span data-i18n="stat-1">Mesra Komuniti</span>
-                        </span>
-                        <span class="s-subhead" style="font-size:14px; display:flex; align-items:center; gap:6px;">
-                            <i class="fas fa-bolt" style="color:var(--c-primary)"></i> <span data-i18n="stat-2">Tindakan Pantas</span>
-                        </span>
-                        <span class="s-subhead" style="font-size:14px; display:flex; align-items:center; gap:6px;">
-                            <i class="fas fa-mobile-alt" style="color:var(--c-primary)"></i> <span data-i18n="stat-3">Platform Digital</span>
-                        </span>
-                    </div>
-                </div>
+<div  class="s-container top-bar-inner">
 
-                <div class="hero-visual s-entrance s-delay-2">
-                    <div class="hero-card">
-                        <img src="logo.png" alt="Logo UMNO BSS" style="width: 120px; height: auto; margin-bottom: 24px;">
-                        <p style="font-size:22px; font-weight:800; color:#1d1d1f; text-align:center; letter-spacing:-.02em;">UMNO BSS</p>
-                        <p style="font-size:14px; color:#6e6e73; font-weight:500; text-align:center; margin-top:4px;">Negeri Sembilan</p>
-                        
-                        <div class="floating-badge top">
-                            <div style="width:32px; height:32px; background:rgba(0,120,0,.08); border-radius:10px; display:flex; align-items:center; justify-content:center;">
-                                <i class="fas fa-check" style="color:#007800;"></i>
-                            </div>
-                            <span data-i18n="stat-2">Tindakan Pantas</span>
-                        </div>
-                        
-                        <div class="floating-badge bottom">
-                            <div style="width:32px; height:32px; background:var(--c-primary-alpha); border-radius:10px; display:flex; align-items:center; justify-content:center;">
-                                <i class="fas fa-handshake" style="color:var(--c-primary);"></i>
-                            </div>
-                            <span data-i18n="stat-1">Mesra Komuniti</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+<div  class="date-display">
 
-        <!-- Mengenai Kami Section -->
-        <section id="mengenai" class="s-section tab-section" style="display:none; padding-top:calc(var(--nav-height) + 40px);">
-            <div class="s-container">
-                <div class="s-section-header s-entrance">
-                    <p class="s-eyebrow" data-i18n="nav-about">Mengenai Kami</p>
-                    <h2 class="s-headline" data-i18n="about-title">Mengenai UMNO BSS</h2>
-                    <p class="s-subhead" data-i18n="about-desc">UMNO Cawangan Bandar Sri Sendayan adalah sebahagian daripada keluarga besar UMNO Bahagian Rembau.</p>
-                </div>
+<i  class="fas fa-calendar-alt"></i>
 
-                <!-- Sejarah Penubuhan -->
-                <div class="s-card s-entrance s-delay-1" style="margin-bottom: 64px; background: var(--c-bg-alt); border: none; padding: 40px;">
-                    <h3 style="font-size:24px; font-weight:800; margin-bottom:20px; display:flex; align-items:center; gap:12px;">
-                        <i class="fas fa-landmark" style="color:var(--c-primary);"></i> <span data-i18n="about-history-title">Sejarah Penubuhan</span>
-                    </h3>
-                    <div style="font-size:16px; color:var(--c-text-muted); line-height:1.7;" data-i18n="about-history-desc">
-                        <p style="margin-bottom:16px;">UMNO Cawangan Bandar Sri Sendayan ditubuhkan bertujuan untuk menyatupadukan masyarakat dan penduduk di sekitar kawasan ini. Bermula dengan sekumpulan ahli jawatankuasa penaja, cawangan ini telah berkembang pesat sejajar dengan pembangunan pesat Bandar Sri Sendayan.</p>
-                        <p>Fokus utama cawangan ini adalah menjaga kebajikan penduduk setempat, merancakkan pembangunan sosial, dan memastikan suara akar umbi didengari di peringkat bahagian mahupun pusat. <em>(Maklumat terperinci sejarah penubuhan akan dikemas kini kelak)</em>.</p>
-                    </div>
-                </div>
-                
-                <div class="s-section-header s-entrance" style="margin-bottom: 40px;">
-                    <h2 class="s-headline" style="font-size: 28px;" data-i18n="about-org-title">Struktur Organisasi</h2>
-                </div>
-                
-                <div class="s-grid-3 org-chart">
-                    <!-- Ketua Cawangan -->
-                    <div class="s-card s-entrance s-delay-1" style="text-align: center; grid-column: 1 / -1; max-width: 300px; margin: 0 auto;">
-                        <div class="avatar-placeholder"><i class="fas fa-user-tie"></i></div>
-                        <h3 style="font-size:18px; font-weight:700; margin-top:16px;" data-i18n="org-ketua">Ketua Cawangan</h3>
-                        <p style="font-size:14px; color:#6e6e73;">UMNO BSS</p>
-                    </div>
-                    
-                    <!-- Setiausaha -->
-                    <div class="s-card s-entrance s-delay-2" style="text-align: center;">
-                        <div class="avatar-placeholder"><i class="fas fa-user-edit"></i></div>
-                        <h3 style="font-size:18px; font-weight:700; margin-top:16px;" data-i18n="org-su">Setiausaha Cawangan</h3>
-                        <p style="font-size:14px; color:#6e6e73;">UMNO BSS</p>
-                    </div>
+<span  id="gregorian-date"></span> | <span  id="hijri-date"></span>
 
-                    <!-- Ketua Pemuda -->
-                    <div class="s-card s-entrance s-delay-3" style="text-align: center;">
-                        <div class="avatar-placeholder"><i class="fas fa-user"></i></div>
-                        <h3 style="font-size:18px; font-weight:700; margin-top:16px;" data-i18n="org-pemuda">Ketua Pemuda</h3>
-                        <p style="font-size:14px; color:#6e6e73;">Cawangan UMNO BSS</p>
-                    </div>
+</div>
 
-                    <!-- Ketua Wanita / Puteri -->
-                    <div class="s-card s-entrance s-delay-1" style="text-align: center;">
-                        <div class="avatar-placeholder"><i class="fas fa-user-graduate"></i></div>
-                        <h3 style="font-size:18px; font-weight:700; margin-top:16px;" data-i18n="org-wanita">Ketua Wanita</h3>
-                        <p style="font-size:14px; color:#6e6e73;">Cawangan UMNO BSS</p>
-                    </div>
-                    
-                    <!-- Ketua Puteri -->
-                    <div class="s-card s-entrance s-delay-2" style="text-align: center; grid-column: 2 / 3;">
-                        <div class="avatar-placeholder"><i class="fas fa-user-friends"></i></div>
-                        <h3 style="font-size:18px; font-weight:700; margin-top:16px;" data-i18n="org-puteri">Ketua Puteri</h3>
-                        <p style="font-size:14px; color:#6e6e73;">Cawangan UMNO BSS</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+<div  class="top-bar-right">
 
-        <!-- Aduan & Bantuan Section -->
-        <section id="aduan" class="s-section s-section-alt tab-section" style="display:none; padding-top:calc(var(--nav-height) + 40px); min-height: 80vh;">
-            <div class="s-container">
-                <div class="s-section-header s-entrance">
-                    <p class="s-eyebrow" data-i18n="nav-complaints">Aduan & Bantuan</p>
-                    <h2 class="s-headline" data-i18n="complaint-title">Pusat Khidmat & Aduan</h2>
-                    <p class="s-subhead" data-i18n="complaint-desc">Kami bersedia mendengar dan membantu. Salurkan aduan atau permohonan bantuan anda terus kepada jawatankuasa kami.</p>
-                </div>
-                
-                <div class="s-grid-2">
-                    <div class="s-card s-entrance s-delay-1">
-                        <div class="s-icon-box" style="background:var(--c-primary-alpha); color:var(--c-primary);">
-                            <i class="fas fa-bullhorn"></i>
-                        </div>
-                        <h3 style="font-size:20px; font-weight:700; margin-bottom:12px;" data-i18n="complaint-card-1-title">Aduan Awam</h3>
-                        <p class="s-subhead" style="font-size:15px; margin-bottom:24px; flex-grow:1;" data-i18n="complaint-card-1-desc">Masalah infrastruktur, keselamatan, atau fasiliti di kawasan anda.</p>
-                        <!-- Replace # with Google Form Link -->
-                        <a href="#" target="_blank" class="s-btn s-btn-outline" style="width:100%;">
-                            <i class="fas fa-external-link-alt"></i> <span data-i18n="complaint-btn">Buka Borang Aduan</span>
-                        </a>
-                    </div>
-                    
-                    <div class="s-card s-entrance s-delay-2">
-                        <div class="s-icon-box" style="background:rgba(0,120,0,.06); color:#007800;">
-                            <i class="fas fa-box-open"></i>
-                        </div>
-                        <h3 style="font-size:20px; font-weight:700; margin-bottom:12px;" data-i18n="complaint-card-2-title">Mohon Bantuan</h3>
-                        <p class="s-subhead" style="font-size:15px; margin-bottom:24px; flex-grow:1;" data-i18n="complaint-card-2-desc">Permohonan bantuan kebajikan untuk golongan yang memerlukan.</p>
-                        <!-- Replace # with Google Form Link -->
-                        <a href="#" target="_blank" class="s-btn s-btn-outline" style="width:100%; border-color:#007800; color:#007800;">
-                            <i class="fas fa-external-link-alt"></i> <span data-i18n="complaint-btn">Buka Borang Aduan</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
+<a  href="https://www.facebook.com/UMNOBSS"  target="_blank"  class="social-link"  title="Facebook UMNO BSS"><i  class="fab fa-facebook-f"></i></a>
 
-        <!-- Aktiviti Section -->
-        <section id="aktiviti" class="s-section tab-section" style="display:none; padding-top:calc(var(--nav-height) + 40px); min-height: 80vh;">
-            <div class="s-container">
-                <div class="s-section-header s-entrance">
-                    <p class="s-eyebrow" data-i18n="nav-activities">Aktiviti</p>
-                    <h2 class="s-headline" data-i18n="activity-title">Aktiviti Terkini</h2>
-                    <p class="s-subhead" data-i18n="activity-desc">Ikuti perkembangan program dan inisiatif terkini yang dianjurkan oleh UMNO Cawangan Bandar Sri Sendayan.</p>
-                </div>
-                
-                <div class="s-grid-3">
-                    <!-- Activity 1 -->
-                    <a href="aktiviti/gotong-royong/index.html" class="s-card activity-card s-entrance s-delay-1" style="display:flex; text-decoration:none; color:inherit; cursor:pointer;">
-                        <div class="activity-img-placeholder">
-                            <i class="fas fa-image"></i>
-                        </div>
-                        <div class="activity-content">
-                            <span class="activity-date" data-i18n="act-1-date">15 Ogos 2026</span>
-                            <h3 class="activity-title" data-i18n="act-1-title">Program Gotong Royong Perdana</h3>
-                            <p class="s-subhead" style="font-size:14px; flex-grow:1;" data-i18n="act-1-desc">Membersihkan kawasan sekitar balai raya dan taman permainan.</p>
-                            <div style="margin-top:16px; font-weight:600; color:var(--c-primary); font-size:14px; display:flex; align-items:center; gap:8px;">
-                                Lihat Butiran <i class="fas fa-arrow-right"></i>
-                            </div>
-                        </div>
-                    </a>
-                    
-                    <!-- Activity 2 -->
-                    <a href="aktiviti/sumbangan-asnaf/index.html" class="s-card activity-card s-entrance s-delay-2" style="display:flex; text-decoration:none; color:inherit; cursor:pointer;">
-                        <div class="activity-img-placeholder">
-                            <i class="fas fa-image"></i>
-                        </div>
-                        <div class="activity-content">
-                            <span class="activity-date" data-i18n="act-2-date">28 Julai 2026</span>
-                            <h3 class="activity-title" data-i18n="act-2-title">Sumbangan Kasih Asnaf</h3>
-                            <p class="s-subhead" style="font-size:14px; flex-grow:1;" data-i18n="act-2-desc">Penyampaian bakul makanan kepada 50 keluarga asnaf di BSS.</p>
-                            <div style="margin-top:16px; font-weight:600; color:var(--c-primary); font-size:14px; display:flex; align-items:center; gap:8px;">
-                                Lihat Butiran <i class="fas fa-arrow-right"></i>
-                            </div>
-                        </div>
-                    </a>
-                    
-                    <!-- Activity 3 -->
-                    <a href="aktiviti/sukaneka-belia/index.html" class="s-card activity-card s-entrance s-delay-3" style="display:flex; text-decoration:none; color:inherit; cursor:pointer;">
-                        <div class="activity-img-placeholder">
-                            <i class="fas fa-image"></i>
-                        </div>
-                        <div class="activity-content">
-                            <span class="activity-date" data-i18n="act-3-date">31 Ogos 2026</span>
-                            <h3 class="activity-title" data-i18n="act-3-title">Sukaneka Belia Merdeka</h3>
-                            <p class="s-subhead" style="font-size:14px; flex-grow:1;" data-i18n="act-3-desc">Acara sukaneka merapatkan silaturahim antara belia setempat.</p>
-                            <div style="margin-top:16px; font-weight:600; color:var(--c-primary); font-size:14px; display:flex; align-items:center; gap:8px;">
-                                Lihat Butiran <i class="fas fa-arrow-right"></i>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
+</div>
 
-        <!-- CTA / Pendaftaran Section -->
-        <section id="sertai" class="tab-section" style="display:none; background:var(--c-primary); padding:calc(var(--nav-height) + 40px) 24px 80px; min-height: 80vh;">
-            <div class="s-container" style="text-align:center">
-                <div class="s-entrance">
-                    <h2 style="font-size:32px; font-weight:800; color:#fff; letter-spacing:-.03em; line-height:1.2; margin-bottom:16px;" data-i18n="join-title">Bersama Membina Komuniti</h2>
-                    <p style="font-size:17px; color:rgba(255,255,255,.9); max-width:520px; margin:0 auto; line-height:1.5;" data-i18n="join-desc">Jadilah sebahagian daripada keluarga besar kami. Bersama kita jayakan agenda pemerkasaan masyarakat Bandar Sri Sendayan.</p>
-                    
-                    <div style="display:flex; justify-content:center; margin-top:36px;">
-                        <form id="join-form" class="join-form s-entrance s-delay-1">
-                            <input type="text" id="join-name" placeholder="Nama Penuh" required class="s-input">
-                            <input type="text" id="join-ic" placeholder="No. Kad Pengenalan" required class="s-input">
-                            <input type="tel" id="join-phone" placeholder="No. Telefon" required class="s-input">
-                            <button type="submit" class="s-btn s-btn-white" style="width: 100%; border: none; cursor: pointer;">
-                                <i class="fas fa-paper-plane"></i> <span data-i18n="join-submit">Hantar Maklumat</span>
-                            </button>
-                        </form>
-                        <div id="join-success" class="join-success" style="display:none;">
-                            <i class="fas fa-check-circle" style="font-size: 32px; margin-bottom: 12px; color: #fff;"></i>
-                            <p data-i18n="join-success-msg">Terima kasih. Borang anda telah diterima. AJK kami akan menghubungi anda dalam masa terdekat.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+</div>
 
-    <!-- Floating Waktu Solat Widget -->
-    <div id="floating-solat" class="floating-solat">
-        <div class="f-solat-toggle" id="f-solat-toggle">
-            <i class="fas fa-mosque"></i>
-            <span id="f-solat-location">Mencari Lokasi...</span>
-            <i class="fas fa-chevron-up" id="f-solat-icon"></i>
-        </div>
-        <div class="f-solat-content" id="f-solat-content">
-            <div class="f-solat-grid">
-                <div class="f-solat-item"><span>Subuh</span><strong id="waktu-subuh">-</strong></div>
-                <div class="f-solat-item"><span>Zohor</span><strong id="waktu-zohor">-</strong></div>
-                <div class="f-solat-item"><span>Asar</span><strong id="waktu-asar">-</strong></div>
-                <div class="f-solat-item"><span>Maghrib</span><strong id="waktu-maghrib">-</strong></div>
-                <div class="f-solat-item"><span>Isyak</span><strong id="waktu-isyak">-</strong></div>
-            </div>
-        </div>
-    </div>
+</div>
 
-    <!-- Footer -->
-    <footer class="s-footer">
-        <div class="s-container">
-            <div class="s-footer-grid">
-                <div>
-                    <div style="display:flex; align-items:center; gap:12px; margin-bottom:16px;">
-                        <img src="logo.png" alt="Logo UMNO BSS" style="width: 40px; height: auto;">
-                        <div>
-                            <div style="font-size:16px; font-weight:700;">UMNO BSS</div>
-                        </div>
-                    </div>
-                    <p style="font-size:14px; color:#aaa; line-height:1.6;" data-i18n="footer-desc">Platform digital rasmi untuk kemudahan dan penyaluran maklumat penduduk Bandar Sri Sendayan.</p>
-                </div>
-                
-                <div>
-                    <p class="footer-heading" data-i18n="footer-links">Pautan Pantas</p>
-                    <a href="#hero" class="footer-link" data-i18n="nav-home">Utama</a>
-                    <a href="#aktiviti" class="footer-link" data-i18n="nav-activities">Aktiviti</a>
-                    <a href="#aduan" class="footer-link" data-i18n="nav-complaints">Aduan & Bantuan</a>
-                </div>
-                
-                <div>
-                    <p class="footer-heading">Hubungi / Ikuti</p>
-                    <p style="color:#ccc; font-size:14px; margin-bottom:8px;"><i class="fas fa-map-marker-alt" style="width:20px;"></i> Bandar Sri Sendayan</p>
-                    <p style="color:#ccc; font-size:14px; margin-bottom:16px;"><i class="fas fa-envelope" style="width:20px;"></i> umnobss@gmail.com</p>
-                    <a href="https://www.facebook.com/UMNOBSS" target="_blank" class="s-btn s-btn-outline" style="border-color: rgba(255,255,255,0.2); color: white; padding: 8px 16px; font-size: 14px;">
-                        <i class="fab fa-facebook-f"></i> Facebook Rasmi
-                    </a>
-                </div>
-            </div>
-            
-            <div class="s-footer-bottom">
-                <p>&copy; 2026 UMNO Cawangan Bandar Sri Sendayan. <span data-i18n="footer-copy">Hak cipta terpelihara.</span></p>
-            </div>
-        </div>
-    </footer>
+  
 
-    <!-- Scripts -->
-    <script src="lang.js"></script>
-    <script src="script.js"></script>
+<!-- Navigation -->
+
+<nav  class="s-nav"  id="navbar">
+
+<div  class="s-nav-inner">
+
+<a  href="#"  class="s-nav-brand">
+
+<img  src="logo.png"  alt="Logo UMNO BSS"  class="nav-logo">
+
+<div  class="s-nav-brand-text">
+
+<span  class="s-nav-brand-name">UMNO Cawangan</span>
+
+<span  class="s-nav-brand-sub">Bandar Sri Sendayan</span>
+
+</div>
+
+</a>
+
+<div  class="s-nav-links">
+
+<a  href="#hero"  class="s-nav-link active"  data-i18n="nav-home">Utama</a>
+
+<a  href="#mengenai"  class="s-nav-link"  data-i18n="nav-about">Mengenai Kami</a>
+
+<a  href="#aktiviti"  class="s-nav-link"  data-i18n="nav-activities">Aktiviti</a>
+
+<a  href="#aduan"  class="s-nav-link"  data-i18n="nav-complaints">Aduan & Bantuan</a>
+
+<div  class="lang-switcher">
+
+<a  href="#"  class="lang-btn active"  data-lang="my">BM</a>
+
+<a  href="#"  class="lang-btn"  data-lang="en">EN</a>
+
+</div>
+
+</div>
+
+  
+
+<button  id="mobile-menu-btn"  class="s-nav-toggle"  aria-expanded="false"  aria-label="Buka menu navigasi">
+
+<i  class="fas fa-bars"  id="menu-icon"></i>
+
+</button>
+
+</div>
+
+<!-- Mobile Menu -->
+
+<div  id="mobile-menu"  class="s-mobile-menu">
+
+<a  href="#hero"  class="s-mobile-link active"  data-i18n="nav-home">Utama</a>
+
+<a  href="#mengenai"  class="s-mobile-link"  data-i18n="nav-about">Mengenai Kami</a>
+
+<a  href="#aktiviti"  class="s-mobile-link"  data-i18n="nav-activities">Aktiviti</a>
+
+<a  href="#aduan"  class="s-mobile-link"  data-i18n="nav-complaints">Aduan & Bantuan</a>
+
+<div  class="lang-switcher"  style="margin-top: 16px;">
+
+<a  href="#"  class="lang-btn active"  data-lang="my">BM</a>
+
+<a  href="#"  class="lang-btn"  data-lang="en">EN</a>
+
+</div>
+
+<a  href="#sertai"  class="s-btn s-mobile-cta"  style="width:100%; margin-top:24px;">
+
+<i  class="fas fa-user-plus"></i>  <span  data-i18n="nav-join">Sertai Kami</span>
+
+</a>
+
+</div>
+
+</nav>
+
+  
+
+<!-- Main Content -->
+
+<main  id="main-content">
+
+<!-- Hero Section -->
+
+<section  id="hero"  class="s-hero tab-section"  style="display:block;">
+
+<div  class="s-container s-hero-inner">
+
+<div  class="s-entrance">
+
+<div  class="s-tag"  style="background:var(--c-primary-alpha); color:var(--c-primary); margin-bottom:20px;">
+
+<i  class="fas fa-map-marker-alt"></i>  <span  data-i18n="hero-tag">Cawangan Bandar Sri Sendayan</span>
+
+</div>
+
+<h1  class="s-display">
+
+<span  data-i18n="hero-title-1">Berkhidmat Untuk</span><br>
+
+<span  class="s-accent"  data-i18n="hero-title-2">Masyarakat Tempatan</span>
+
+</h1>
+
+<p  class="s-subhead"  style="max-width:540px; margin-top:16px;"  data-i18n="hero-desc">
+
+Pusat khidmat setempat untuk pendaftaran ahli, perkongsian aktiviti, dan saluran terus untuk sebarang aduan atau permohonan bantuan penduduk Bandar Sri Sendayan.
+
+</p>
+
+<div  class="hero-actions">
+
+<a  href="#aduan"  class="s-btn">
+
+<i  class="fas fa-hands-helping"></i>  <span  data-i18n="hero-btn-complaint">Salurkan Aduan</span>
+
+</a>
+
+<a  href="#aktiviti"  class="s-btn s-btn-outline">
+
+<i  class="fas fa-calendar-alt"></i>  <span  data-i18n="hero-btn-activity">Lihat Aktiviti</span>
+
+</a>
+
+</div>
+
+<div  style="display:flex; gap:24px; margin-top:32px; flex-wrap:wrap;">
+
+<span  class="s-subhead"  style="font-size:14px; display:flex; align-items:center; gap:6px;">
+
+<i  class="fas fa-users"  style="color:var(--c-primary)"></i>  <span  data-i18n="stat-1">Mesra Komuniti</span>
+
+</span>
+
+<span  class="s-subhead"  style="font-size:14px; display:flex; align-items:center; gap:6px;">
+
+<i  class="fas fa-bolt"  style="color:var(--c-primary)"></i>  <span  data-i18n="stat-2">Tindakan Pantas</span>
+
+</span>
+
+<span  class="s-subhead"  style="font-size:14px; display:flex; align-items:center; gap:6px;">
+
+<i  class="fas fa-mobile-alt"  style="color:var(--c-primary)"></i>  <span  data-i18n="stat-3">Platform Digital</span>
+
+</span>
+
+</div>
+
+</div>
+
+  
+
+<div  class="hero-visual s-entrance s-delay-2">
+
+<div  class="hero-card">
+
+<img  src="logo.png"  alt="Logo UMNO BSS"  style="width: 120px; height: auto; margin-bottom: 24px;">
+
+<p  style="font-size:22px; font-weight:800; color:#1d1d1f; text-align:center; letter-spacing:-.02em;">UMNO Bandar Sri Sendayan</p>
+
+<p  style="font-size:14px; color:#6e6e73; font-weight:500; text-align:center; margin-top:4px;">Negeri Sembilan</p>
+
+<div  class="floating-badge top">
+
+<div  style="width:32px; height:32px; background:rgba(0,120,0,.08); border-radius:10px; display:flex; align-items:center; justify-content:center;">
+
+<i  class="fas fa-check"  style="color:#007800;"></i>
+
+</div>
+
+<span  data-i18n="stat-2">Tindakan Pantas</span>
+
+</div>
+
+<div  class="floating-badge bottom">
+
+<div  style="width:32px; height:32px; background:var(--c-primary-alpha); border-radius:10px; display:flex; align-items:center; justify-content:center;">
+
+<i  class="fas fa-handshake"  style="color:var(--c-primary);"></i>
+
+</div>
+
+<span  data-i18n="stat-1">Mesra Komuniti</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+  
+
+<!-- Mengenai Kami Section -->
+
+<section  id="mengenai"  class="s-section tab-section"  style="display:none; padding-top:calc(var(--nav-height) + 40px);">
+
+<div  class="s-container">
+
+<div  class="s-section-header s-entrance">
+
+<p  class="s-eyebrow"  data-i18n="nav-about">Mengenai Kami</p>
+
+<h2  class="s-headline"  data-i18n="about-title">Mengenai UMNO Bandar Sri Sendayan</h2>
+
+<p  class="s-subhead"  data-i18n="about-desc">UMNO Cawangan Bandar Sri Sendayan adalah sebahagian daripada keluarga besar UMNO Bahagian Rembau.</p>
+
+</div>
+
+  
+
+<!-- Sejarah Penubuhan -->
+
+<div  class="s-card s-entrance s-delay-1"  style="margin-bottom: 64px; background: var(--c-bg-alt); border: none; padding: 40px;">
+
+<h3  style="font-size:24px; font-weight:800; margin-bottom:20px; display:flex; align-items:center; gap:12px;">
+
+<i  class="fas fa-landmark"  style="color:var(--c-primary);"></i>  <span  data-i18n="about-history-title">Sejarah Penubuhan</span>
+
+</h3>
+
+<div  style="font-size:16px; color:var(--c-text-muted); line-height:1.7;"  data-i18n="about-history-desc">
+
+<p  style="margin-bottom:16px;">UMNO Cawangan Bandar Sri Sendayan ditubuhkan bertujuan untuk menyatupadukan masyarakat dan penduduk di sekitar kawasan ini. Bermula dengan sekumpulan ahli jawatankuasa penaja, cawangan ini telah berkembang pesat sejajar dengan pembangunan pesat Bandar Sri Sendayan.</p>
+
+<p>Fokus utama cawangan ini adalah menjaga kebajikan penduduk setempat, merancakkan pembangunan sosial, dan memastikan suara akar umbi didengari di peringkat bahagian mahupun pusat. <em>(Maklumat terperinci sejarah penubuhan akan dikemas kini kelak)</em>.</p>
+
+</div>
+
+</div>
+
+<div  class="s-section-header s-entrance"  style="margin-bottom: 40px;">
+
+<h2  class="s-headline"  style="font-size: 28px;"  data-i18n="about-org-title">Struktur Organisasi</h2>
+
+</div>
+
+<div  class="s-grid-3 org-chart">
+
+<!-- Ketua Cawangan -->
+
+<div  class="s-card s-entrance s-delay-1"  style="text-align: center; grid-column: 1 / -1; max-width: 300px; margin: 0 auto;">
+
+<div  class="avatar-placeholder"><i  class="fas fa-user-tie"></i></div>
+
+<h3  style="font-size:18px; font-weight:700; margin-top:16px;"  data-i18n="org-ketua">Ketua Cawangan</h3>
+
+<p  style="font-size:14px; color:#6e6e73;">UMNO BSS</p>
+
+</div>
+
+<!-- Setiausaha -->
+
+<div  class="s-card s-entrance s-delay-2"  style="text-align: center;">
+
+<div  class="avatar-placeholder"><i  class="fas fa-user-edit"></i></div>
+
+<h3  style="font-size:18px; font-weight:700; margin-top:16px;"  data-i18n="org-su">Setiausaha Cawangan</h3>
+
+<p  style="font-size:14px; color:#6e6e73;">UMNO BSS</p>
+
+</div>
+
+  
+
+<!-- Ketua Pemuda -->
+
+<div  class="s-card s-entrance s-delay-3"  style="text-align: center;">
+
+<div  class="avatar-placeholder"><i  class="fas fa-user"></i></div>
+
+<h3  style="font-size:18px; font-weight:700; margin-top:16px;"  data-i18n="org-pemuda">Ketua Pemuda</h3>
+
+<p  style="font-size:14px; color:#6e6e73;">Cawangan UMNO BSS</p>
+
+</div>
+
+  
+
+<!-- Ketua Wanita / Puteri -->
+
+<div  class="s-card s-entrance s-delay-1"  style="text-align: center;">
+
+<div  class="avatar-placeholder"><i  class="fas fa-user-graduate"></i></div>
+
+<h3  style="font-size:18px; font-weight:700; margin-top:16px;"  data-i18n="org-wanita">Ketua Wanita</h3>
+
+<p  style="font-size:14px; color:#6e6e73;">Cawangan UMNO BSS</p>
+
+</div>
+
+<!-- Ketua Puteri -->
+
+<div  class="s-card s-entrance s-delay-2"  style="text-align: center; grid-column: 2 / 3;">
+
+<div  class="avatar-placeholder"><i  class="fas fa-user-friends"></i></div>
+
+<h3  style="font-size:18px; font-weight:700; margin-top:16px;"  data-i18n="org-puteri">Ketua Puteri</h3>
+
+<p  style="font-size:14px; color:#6e6e73;">Cawangan UMNO BSS</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+  
+
+<!-- Aduan & Bantuan Section -->
+
+<section  id="aduan"  class="s-section s-section-alt tab-section"  style="display:none; padding-top:calc(var(--nav-height) + 40px); min-height: 80vh;">
+
+<div  class="s-container">
+
+<div  class="s-section-header s-entrance">
+
+<p  class="s-eyebrow"  data-i18n="nav-complaints">Aduan & Bantuan</p>
+
+<h2  class="s-headline"  data-i18n="complaint-title">Pusat Khidmat & Aduan</h2>
+
+<p  class="s-subhead"  data-i18n="complaint-desc">Kami bersedia mendengar dan membantu. Salurkan aduan atau permohonan bantuan anda terus kepada jawatankuasa kami.</p>
+
+</div>
+
+<div  class="s-grid-2">
+
+<div  class="s-card s-entrance s-delay-1">
+
+<div  class="s-icon-box"  style="background:var(--c-primary-alpha); color:var(--c-primary);">
+
+<i  class="fas fa-bullhorn"></i>
+
+</div>
+
+<h3  style="font-size:20px; font-weight:700; margin-bottom:12px;"  data-i18n="complaint-card-1-title">Aduan Awam</h3>
+
+<p  class="s-subhead"  style="font-size:15px; margin-bottom:24px; flex-grow:1;"  data-i18n="complaint-card-1-desc">Masalah infrastruktur, keselamatan, atau fasiliti di kawasan anda.</p>
+
+<!-- Replace # with Google Form Link -->
+
+<a  href="#"  target="_blank"  class="s-btn s-btn-outline"  style="width:100%;">
+
+<i  class="fas fa-external-link-alt"></i>  <span  data-i18n="complaint-btn">Buka Borang Aduan</span>
+
+</a>
+
+</div>
+
+<div  class="s-card s-entrance s-delay-2">
+
+<div  class="s-icon-box"  style="background:rgba(0,120,0,.06); color:#007800;">
+
+<i  class="fas fa-box-open"></i>
+
+</div>
+
+<h3  style="font-size:20px; font-weight:700; margin-bottom:12px;"  data-i18n="complaint-card-2-title">Mohon Bantuan</h3>
+
+<p  class="s-subhead"  style="font-size:15px; margin-bottom:24px; flex-grow:1;"  data-i18n="complaint-card-2-desc">Permohonan bantuan kebajikan untuk golongan yang memerlukan.</p>
+
+<!-- Replace # with Google Form Link -->
+
+<a  href="#"  target="_blank"  class="s-btn s-btn-outline"  style="width:100%; border-color:#007800; color:#007800;">
+
+<i  class="fas fa-external-link-alt"></i>  <span  data-i18n="complaint-btn">Buka Borang Aduan</span>
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+  
+
+<!-- Aktiviti Section -->
+
+<section  id="aktiviti"  class="s-section tab-section"  style="display:none; padding-top:calc(var(--nav-height) + 40px); min-height: 80vh;">
+
+<div  class="s-container">
+
+<div  class="s-section-header s-entrance">
+
+<p  class="s-eyebrow"  data-i18n="nav-activities">Aktiviti</p>
+
+<h2  class="s-headline"  data-i18n="activity-title">Aktiviti Terkini</h2>
+
+<p  class="s-subhead"  data-i18n="activity-desc">Ikuti perkembangan program dan inisiatif terkini yang dianjurkan oleh UMNO Cawangan Bandar Sri Sendayan.</p>
+
+</div>
+
+<div  class="s-grid-3">
+
+<!-- Activity 1 -->
+
+<a  href="aktiviti/gotong-royong/index.html"  class="s-card activity-card s-entrance s-delay-1"  style="display:flex; text-decoration:none; color:inherit; cursor:pointer;">
+
+<div  class="activity-img-placeholder">
+
+<i  class="fas fa-image"></i>
+
+</div>
+
+<div  class="activity-content">
+
+<span  class="activity-date"  data-i18n="act-1-date">15 Ogos 2026</span>
+
+<h3  class="activity-title"  data-i18n="act-1-title">Program Gotong Royong Perdana</h3>
+
+<p  class="s-subhead"  style="font-size:14px; flex-grow:1;"  data-i18n="act-1-desc">Membersihkan kawasan sekitar balai raya dan taman permainan.</p>
+
+<div  style="margin-top:16px; font-weight:600; color:var(--c-primary); font-size:14px; display:flex; align-items:center; gap:8px;">
+
+Lihat Butiran <i  class="fas fa-arrow-right"></i>
+
+</div>
+
+</div>
+
+</a>
+
+<!-- Activity 2 -->
+
+<a  href="aktiviti/sumbangan-asnaf/index.html"  class="s-card activity-card s-entrance s-delay-2"  style="display:flex; text-decoration:none; color:inherit; cursor:pointer;">
+
+<div  class="activity-img-placeholder">
+
+<i  class="fas fa-image"></i>
+
+</div>
+
+<div  class="activity-content">
+
+<span  class="activity-date"  data-i18n="act-2-date">28 Julai 2026</span>
+
+<h3  class="activity-title"  data-i18n="act-2-title">Sumbangan Kasih Asnaf</h3>
+
+<p  class="s-subhead"  style="font-size:14px; flex-grow:1;"  data-i18n="act-2-desc">Penyampaian bakul makanan kepada 50 keluarga asnaf di BSS.</p>
+
+<div  style="margin-top:16px; font-weight:600; color:var(--c-primary); font-size:14px; display:flex; align-items:center; gap:8px;">
+
+Lihat Butiran <i  class="fas fa-arrow-right"></i>
+
+</div>
+
+</div>
+
+</a>
+
+<!-- Activity 3 -->
+
+<a  href="aktiviti/sukaneka-belia/index.html"  class="s-card activity-card s-entrance s-delay-3"  style="display:flex; text-decoration:none; color:inherit; cursor:pointer;">
+
+<div  class="activity-img-placeholder">
+
+<i  class="fas fa-image"></i>
+
+</div>
+
+<div  class="activity-content">
+
+<span  class="activity-date"  data-i18n="act-3-date">31 Ogos 2026</span>
+
+<h3  class="activity-title"  data-i18n="act-3-title">Sukaneka Belia Merdeka</h3>
+
+<p  class="s-subhead"  style="font-size:14px; flex-grow:1;"  data-i18n="act-3-desc">Acara sukaneka merapatkan silaturahim antara belia setempat.</p>
+
+<div  style="margin-top:16px; font-weight:600; color:var(--c-primary); font-size:14px; display:flex; align-items:center; gap:8px;">
+
+Lihat Butiran <i  class="fas fa-arrow-right"></i>
+
+</div>
+
+</div>
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+  
+
+<!-- CTA / Pendaftaran Section -->
+
+<section  id="sertai"  class="tab-section"  style="display:none; background:var(--c-primary); padding:calc(var(--nav-height) + 40px) 24px 80px; min-height: 80vh;">
+
+<div  class="s-container"  style="text-align:center">
+
+<div  class="s-entrance">
+
+<h2  style="font-size:32px; font-weight:800; color:#fff; letter-spacing:-.03em; line-height:1.2; margin-bottom:16px;"  data-i18n="join-title">Bersama Membina Komuniti</h2>
+
+<p  style="font-size:17px; color:rgba(255,255,255,.9); max-width:520px; margin:0 auto; line-height:1.5;"  data-i18n="join-desc">Jadilah sebahagian daripada keluarga besar kami. Bersama kita jayakan agenda pemerkasaan masyarakat Bandar Sri Sendayan.</p>
+
+<div  style="display:flex; justify-content:center; margin-top:36px;">
+
+<form  id="join-form"  class="join-form s-entrance s-delay-1">
+
+<input  type="text"  id="join-name"  placeholder="Nama Penuh"  required  class="s-input">
+
+<input  type="text"  id="join-ic"  placeholder="No. Kad Pengenalan"  required  class="s-input">
+
+<input  type="tel"  id="join-phone"  placeholder="No. Telefon"  required  class="s-input">
+
+<button  type="submit"  class="s-btn s-btn-white"  style="width: 100%; border: none; cursor: pointer;">
+
+<i  class="fas fa-paper-plane"></i>  <span  data-i18n="join-submit">Hantar Maklumat</span>
+
+</button>
+
+</form>
+
+<div  id="join-success"  class="join-success"  style="display:none;">
+
+<i  class="fas fa-check-circle"  style="font-size: 32px; margin-bottom: 12px; color: #fff;"></i>
+
+<p  data-i18n="join-success-msg">Terima kasih. Borang anda telah diterima. AJK kami akan menghubungi anda dalam masa terdekat.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+  
+
+<!-- Floating Waktu Solat Widget -->
+
+<div  id="floating-solat"  class="floating-solat">
+
+<div  class="f-solat-toggle"  id="f-solat-toggle">
+
+<i  class="fas fa-mosque"></i>
+
+<span  id="f-solat-location">Mencari Lokasi...</span>
+
+<i  class="fas fa-chevron-up"  id="f-solat-icon"></i>
+
+</div>
+
+<div  class="f-solat-content"  id="f-solat-content">
+
+<div  class="f-solat-grid">
+
+<div  class="f-solat-item"><span>Subuh</span><strong  id="waktu-subuh">-</strong></div>
+
+<div  class="f-solat-item"><span>Zohor</span><strong  id="waktu-zohor">-</strong></div>
+
+<div  class="f-solat-item"><span>Asar</span><strong  id="waktu-asar">-</strong></div>
+
+<div  class="f-solat-item"><span>Maghrib</span><strong  id="waktu-maghrib">-</strong></div>
+
+<div  class="f-solat-item"><span>Isyak</span><strong  id="waktu-isyak">-</strong></div>
+
+</div>
+
+</div>
+
+</div>
+
+  
+
+<!-- Footer -->
+
+<footer  class="s-footer">
+
+<div  class="s-container">
+
+<div  class="s-footer-grid">
+
+<div>
+
+<div  style="display:flex; align-items:center; gap:12px; margin-bottom:16px;">
+
+<img  src="logo.png"  alt="Logo UMNO BSS"  style="width: 40px; height: auto;">
+
+<div>
+
+<div  style="font-size:16px; font-weight:700;">UMNO BSS</div>
+
+</div>
+
+</div>
+
+<p  style="font-size:14px; color:#aaa; line-height:1.6;"  data-i18n="footer-desc">Platform digital rasmi untuk kemudahan dan penyaluran maklumat penduduk Bandar Sri Sendayan.</p>
+
+</div>
+
+<div>
+
+<p  class="footer-heading"  data-i18n="footer-links">Pautan Pantas</p>
+
+<a  href="#hero"  class="footer-link"  data-i18n="nav-home">Utama</a>
+
+<a  href="#aktiviti"  class="footer-link"  data-i18n="nav-activities">Aktiviti</a>
+
+<a  href="#aduan"  class="footer-link"  data-i18n="nav-complaints">Aduan & Bantuan</a>
+
+</div>
+
+<div>
+
+<p  class="footer-heading">Hubungi / Ikuti</p>
+
+<p  style="color:#ccc; font-size:14px; margin-bottom:8px;"><i  class="fas fa-map-marker-alt"  style="width:20px;"></i> Bandar Sri Sendayan</p>
+
+<p  style="color:#ccc; font-size:14px; margin-bottom:16px;"><i  class="fas fa-envelope"  style="width:20px;"></i> umnobss@gmail.com</p>
+
+<a  href="https://www.facebook.com/UMNOBSS"  target="_blank"  class="s-btn s-btn-outline"  style="border-color: rgba(255,255,255,0.2); color: white; padding: 8px 16px; font-size: 14px;">
+
+<i  class="fab fa-facebook-f"></i> Facebook Rasmi
+
+</a>
+
+</div>
+
+</div>
+
+<div  class="s-footer-bottom">
+
+<p>&copy; 2026 UMNO Cawangan Bandar Sri Sendayan. <span  data-i18n="footer-copy">Hak cipta terpelihara.</span></p>
+
+</div>
+
+</div>
+
+</footer>
+
+  
+
+<!-- Scripts -->
+
+<script  src="lang.js"></script>
+
+<script  src="script.js"></script>
+
 </body>
+
 </html>
