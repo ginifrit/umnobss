@@ -52,11 +52,36 @@ const translations = {
         "about-history-title": "Sejarah Penubuhan",
         "about-history-desc": "<p style='margin-bottom:16px;'>UMNO Cawangan Bandar Sri Sendayan ditubuhkan bertujuan untuk menyatupadukan masyarakat dan penduduk di sekitar kawasan ini. Bermula dengan sekumpulan ahli jawatankuasa penaja, cawangan ini telah berkembang pesat sejajar dengan pembangunan pesat Bandar Sri Sendayan.</p><p>Fokus utama cawangan ini adalah menjaga kebajikan penduduk setempat, merancakkan pembangunan sosial, dan memastikan suara akar umbi didengari di peringkat bahagian mahupun pusat. <em>(Maklumat terperinci sejarah penubuhan akan dikemas kini kelak)</em>.</p>",
         "about-org-title": "Struktur Organisasi",
+        
+        "org-ketua-name": "Ahmad Bin Abu",
         "org-ketua": "Ketua Cawangan",
-        "org-su": "Setiausaha Cawangan",
-        "org-pemuda": "Ketua Pemuda",
-        "org-wanita": "Ketua Wanita",
-        "org-puteri": "Ketua Puteri",
+        "org-timbalan-name": "Nama Timbalan Ketua",
+        "org-timbalan": "Timbalan Ketua Cawangan",
+        
+        "org-su-name": "Nama Setiausaha",
+        "org-su": "Setiausaha",
+        "org-bendahari-name": "Nama Bendahari",
+        "org-bendahari": "Bendahari Cawangan",
+        
+        "org-pengerusi-name": "Nama Pengerusi Tetap",
+        "org-pengerusi": "Pengerusi Tetap Cawangan",
+        "org-tim-pengerusi-name": "Nama Tim. Pengerusi Tetap",
+        "org-tim-pengerusi": "Timbalan Pengerusi Tetap",
+        
+        "org-wanita-name": "Nama Ketua Wanita",
+        "org-wanita": "Ketua Wanita Cawangan",
+        "org-tim-wanita-name": "Nama Tim. Ketua Wanita",
+        "org-tim-wanita": "Timbalan Ketua Wanita",
+        
+        "org-pemuda-name": "Nama Ketua Pemuda",
+        "org-pemuda": "Ketua Pemuda Cawangan",
+        "org-tim-pemuda-name": "Nama Tim. Ketua Pemuda",
+        "org-tim-pemuda": "Timbalan Ketua Pemuda",
+        
+        "org-puteri-name": "Nama Ketua Puteri",
+        "org-puteri": "Ketua Puteri Cawangan",
+        "org-tim-puteri-name": "Nama Tim. Ketua Puteri",
+        "org-tim-puteri": "Timbalan Ketua Puteri",
         
         // Join Section
         "join-title": "Bersama Membina Komuniti",
@@ -123,11 +148,36 @@ const translations = {
         "about-history-title": "Establishment History",
         "about-history-desc": "<p style='margin-bottom:16px;'>The UMNO Bandar Sri Sendayan Branch was established to unite the community and residents around this area. Starting with a group of pro-tem committee members, the branch has grown rapidly in line with the rapid development of Bandar Sri Sendayan.</p><p>The main focus of this branch is to safeguard the welfare of the local residents, boost social development, and ensure grassroots voices are heard at the division and central levels. <em>(Detailed establishment history will be updated later)</em>.</p>",
         "about-org-title": "Organizational Structure",
+        
+        "org-ketua-name": "Ahmad Bin Abu",
         "org-ketua": "Branch Chief",
-        "org-su": "Branch Secretary",
-        "org-pemuda": "Youth Chief",
+        "org-timbalan-name": "Name of Deputy Chief",
+        "org-timbalan": "Deputy Branch Chief",
+        
+        "org-su-name": "Name of Secretary",
+        "org-su": "Secretary",
+        "org-bendahari-name": "Name of Treasurer",
+        "org-bendahari": "Branch Treasurer",
+        
+        "org-pengerusi-name": "Name of Permanent Chairman",
+        "org-pengerusi": "Permanent Chairman",
+        "org-tim-pengerusi-name": "Name of Deputy Chairman",
+        "org-tim-pengerusi": "Deputy Permanent Chairman",
+        
+        "org-wanita-name": "Name of Women's Chief",
         "org-wanita": "Women's Chief",
+        "org-tim-wanita-name": "Name of Women's Deputy",
+        "org-tim-wanita": "Women's Deputy Chief",
+        
+        "org-pemuda-name": "Name of Youth Chief",
+        "org-pemuda": "Youth Chief",
+        "org-tim-pemuda-name": "Name of Youth Deputy",
+        "org-tim-pemuda": "Youth Deputy Chief",
+        
+        "org-puteri-name": "Name of Puteri Chief",
         "org-puteri": "Puteri Chief",
+        "org-tim-puteri-name": "Name of Puteri Deputy",
+        "org-tim-puteri": "Puteri Deputy Chief",
         
         // Join Section
         "join-title": "Building The Community Together",

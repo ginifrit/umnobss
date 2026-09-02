@@ -272,4 +272,20 @@ document.addEventListener('DOMContentLoaded', () => {
             joinForm.reset();
         });
     }
+
+    // --- Org Chart Accordion Logic ---
+    const accordions = document.querySelectorAll('.org-accordion-btn');
+    accordions.forEach(acc => {
+        acc.addEventListener('click', function() {
+            this.classList.toggle('active');
+            const panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+                panel.classList.remove('active');
+            } else {
+                panel.classList.add('active');
+                panel.style.maxHeight = panel.scrollHeight + 40 + "px";
+            }
+        });
+    });
 });
